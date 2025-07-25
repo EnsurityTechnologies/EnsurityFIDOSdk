@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+
+		<!-- NuGet package metadata -->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>FidoClientSdk</PackageId>
+		<Version>1.2.5</Version>
+		<Authors>VishnuEnsurity</Authors>
+		<Company>Ensurity</Company>
+		<Description>.NET SDK Client for FIDO API</Description>
+		<PackageTags>FIDO;WebAuthn;Authentication;SDK</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<!--<RepositoryUrl>https://github.com/vishnuuppalapati/FidoClientSdkSample</RepositoryUrl>-->
+
+		<!-- Security/visibility restrictions -->
+		<IncludeSymbols>false</IncludeSymbols>
+		<IncludeSource>false</IncludeSource>
+		<EmbedUntrackedSources>false</EmbedUntrackedSources>
+		<DebugType>none</DebugType>
+		<!-- No symbols embedded -->
+		<Deterministic>true</Deterministic>
+		<!-- Consistent output binaries -->
+		<EmitCompilerGeneratedFiles>false</EmitCompilerGeneratedFiles>
+
+		<!-- Code quality -->
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+		<PackageReference Include="MongoDB.Bson" Version="3.4.1" />
+	</ItemGroup>
+
+</Project>
